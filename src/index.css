@@ -3,7 +3,7 @@ Montserrat - Main Font | font-family: font-family: 'Proxima Nova', sans-serif;
 Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 */
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Orbitron:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 /* CSS RESET */
 * {
@@ -17,17 +17,17 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 }
 
 :root {
-	--color-bg: #132025;
+	--color-bg: #111c20;
 	--color-bg-variant: #1f343d;
 	--color-orange-primary: #fb5708;
-	--color-orange-secondary: #fa7739;
+	--color-orange-secondary: #c88261;
 	--color-white : #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
 
 	--transition: all 0.3s ease;
 
-	--container-width-lg: 77%;
-	--container-width-md: 85%;
+	--container-width-lg: 75%;
+	--container-width-md: 80%;
 	--container-widtth-sm: 90%;
 
 	--font-primary: 'Proxima Nova', sans-serif;
@@ -60,6 +60,7 @@ body {
 
 h1, h2, h3, h4, h5  {
   	font-weight: 500;
+	margin-bottom: 0;
 }
 
 h1 {
@@ -78,7 +79,7 @@ a {
 }
 
 a:hover {
-  	color: var(--color-light);
+  	color: var(--color-white);
 }
 
 .btns {
