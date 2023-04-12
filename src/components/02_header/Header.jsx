@@ -1,28 +1,66 @@
 import './header.css';
 import Resume from '../../assets/ARCFerrer_Resume_2023.pdf';
 import HeaderSocials from './HeaderSocials';
+import {motion} from 'framer-motion';
 
 function Header(){
+    const container = {
+        hidden: {opacity: 1, scale: 0},
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delayChildren: 0.85,
+                staggerChildren: 0.15
+            }
+        }
+    };
+
+    const item = {
+        hidden : {y: 20, opacity: 0},
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    }
+
     return(
         <header>
-            <div className="logo">AF</div>
+            <motion.div 
+                className="logo"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ 
+                    duration: 0.4, 
+                    ease: "easeInOut",
+                    delay: 0.3
+                }}
+            >
+                AF
+            </motion.div>
 
-            <div className="container header__container">
-                <h5>You found me! Hi, I'm</h5>
-                <h1>Anthony Ferrer.</h1>
-                <h1 className='header__slogan'>Building the web <span>one line at a time.</span></h1>
-                <p>
-                Software engineer well-versed in account management with demonstrated skills in frontend web development and graphic design. Dynamic, detail-oriented, and a self-driven tech enthusiast who makes sure to get the job done.
-                </p>
+            <motion.div 
+                className="container header__container"
+                variants={container}
+                initial="hidden"
+                animate="visible"
+            >
+                <motion.h5 variants={item}>You found me! Hi, I'm</motion.h5>
+                <motion.h1 variants={item}>Anthony Ferrer.</motion.h1>
+                <motion.h1 className='header__slogan' variants={item}>
+                    Building the web <span>one line at a time.</span>
+                </motion.h1>
+                <motion.p variants={item}>
+                    Software engineer well-versed in account management with demonstrated skills in frontend web development and graphic design. Dynamic, detail-oriented, and a self-driven tech enthusiast who makes sure to get the job done.
+                </motion.p>
                 
-                <div className="header__buttons">
+                <motion.div className="header__buttons" variants={item}>
                     <a href={Resume} download className='btns btn-primary'>Download Resumé</a>
                     <a href={Resume} download className='btns btn-secondary'>Let's talk</a>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             <HeaderSocials />
-            <small>arcferrer5@gmail.com</small>
         </header>
     )
 }
