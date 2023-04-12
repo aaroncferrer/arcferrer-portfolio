@@ -1,5 +1,6 @@
 /* 
-Montserrat - Main Font | font-family: font-family: 'Proxima Nova', sans-serif;
+Proxima - Main Font | font-family: font-family: 'Proxima Nova', sans-serif;
+Montserrat - Text Font | font-family: 'Montserrat', sans-serif;
 Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 */
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
@@ -31,6 +32,7 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 	--container-widtth-sm: 90%;
 
 	--font-primary: 'Proxima Nova', sans-serif;
+	--font-text: 'Montserrat', sans-serif;
 	--font-secondary: 'Space Mono', monospace;
 }
 
@@ -99,8 +101,9 @@ a:hover {
 }
 
 .btn-primary:hover {
-	background: rgba(251, 87, 8, 0.15);
-	color: var(--color-orange-primary);
+	/* background: rgba(251, 87, 8, 0.15); */
+	background-color: var(--color-orange-primary);
+	color: var(--color-white);
 }
 
 .btn-secondary {
