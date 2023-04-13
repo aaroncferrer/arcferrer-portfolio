@@ -4,6 +4,7 @@ import {BsPerson} from 'react-icons/bs';
 import {VscTools} from 'react-icons/vsc';
 import {VscLibrary} from 'react-icons/vsc';
 import {BiMessageDetail} from 'react-icons/bi';
+import {AiOutlineArrowUp} from 'react-icons/ai';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -29,11 +30,16 @@ function Nav(props){
         }
     }
 
-    const {aboutInView, techInView, projectsInView, contactsInView} = props;
-
+    const {aboutInView, techInView, projectsInView, contactsInView, footerInView} = props;
     const [activeIcon, setActiveIcon] = useState('header');
+    const [showArrow, setShowArrow] = useState(false);
 
     useEffect(() => {
+        if(footerInView){
+            setActiveIcon(null);
+            setShowArrow(true);
+            return
+        }
         if(aboutInView){
             setActiveIcon('about');
             return
@@ -47,10 +53,13 @@ function Nav(props){
         }if(contactsInView){
             setActiveIcon('contact');
             return
-        } setActiveIcon('header');
-    }, [aboutInView, techInView, projectsInView, contactsInView])
+        }
+        setActiveIcon('header');
+        setShowArrow(false);
+    }, [aboutInView, techInView, projectsInView, contactsInView, footerInView])
 
     return(
+        <>
         <motion.nav
             variants={container}
             initial="hidden"
@@ -73,6 +82,15 @@ function Nav(props){
                 <BiMessageDetail />
             </motion.a>
         </motion.nav>
+
+        {showArrow && (
+            <nav className={`nav__arrow ${footerInView ? 'show' : ''}`}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a href='#' className='arrowUp'><AiOutlineArrowUp /></a>
+            </nav>
+        )}
+            
+        </>
     )
 }
 

@@ -19,7 +19,7 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 }
 
 :root {
-	--color-bg: #111c20;
+	--color-bg: #0f191d;
 	--color-bg-variant: #1f343d;
 	--color-orange-primary: #fb5708;
 	--color-orange-secondary: #c88261;
@@ -94,6 +94,8 @@ a:hover {
 	transition: var(--transition);
 	font-size: 0.85rem;
 	letter-spacing: 0;
+	-webkit-box-shadow: 6px 9px 15px 3px rgba(0,0,0,0.45); 
+	box-shadow: 6px 9px 15px 3px rgba(0,0,0,0.45);
 }
 
 .btn-primary {

@@ -36,6 +36,11 @@
     gap: 0.8rem;
 }
 
+.about__education__header h2 {
+    font-family: var(--font-secondary);
+    letter-spacing: 1.3px;
+}
+
 .about__education__header * {
     font-size: 1.3rem;
 }

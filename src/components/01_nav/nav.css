@@ -14,7 +14,19 @@ nav {
     backdrop-filter: blur(15px);
 }
 
-nav a {
+.nav__arrow {
+    padding: 0.7rem;
+    position: fixed;
+    margin-right: 10rem;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.nav__arrow.show {
+    opacity: 1;
+}
+
+nav a{
     background: transparent;
     padding: 0.75rem;
     border-radius: 50%;
@@ -30,4 +42,11 @@ nav a:hover {
 nav a.active {
     background: var(--color-orange-primary);
     color: var(--color-white);
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
+@media screen and (max-width: 600px){
+    .nav__arrow {
+        display: none;
+    }
 }

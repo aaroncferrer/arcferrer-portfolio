@@ -18,6 +18,7 @@ function App() {
 	const [techRef, techInView] = useInView({ threshold: 0.5 });
 	const [projectsRef, projectsInView] = useInView({ threshold: 0.5 });
 	const [contactsRef, contactsInView] = useInView({ threshold: 0.5 });
+	const [footerRef, footerInView] = useInView({ threshold: 1 });
 
 	return (
 		<>
@@ -42,13 +43,14 @@ function App() {
 			techInView={techInView} 
 			projectsInView={projectsInView} 
 			contactsInView={contactsInView} 
+			footerInView={footerInView}
 		/>
 		<Header />
 		<About aboutRef={aboutRef} />
 		<Tech techRef={techRef} />
 		<Projects projectsRef={projectsRef} />
 		<Contact contactRef={contactsRef} />
-		<Footer />
+		<Footer footerRef={footerRef}/>
 
 		</>
   	)

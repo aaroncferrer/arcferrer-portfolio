@@ -1,8 +1,8 @@
 import './footer.css';
 
-function Footer(){
+function Footer({footerRef}){
     return(
-        <footer>
+        <footer ref={footerRef}>
             Footer
         </footer>
     )

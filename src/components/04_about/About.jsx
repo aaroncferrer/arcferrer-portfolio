@@ -1,7 +1,6 @@
 import './about.css';
 import aboutImg from '../../assets/about.png'
 import SectionHeader from '../03_section_header/SectionHeader';
-import {MdOutlineSchool} from 'react-icons/md';
 
 function About({aboutRef}){
 
@@ -24,7 +23,6 @@ function About({aboutRef}){
 
                         <article className="about__education">
                             <div className="about__education__header">
-                                <MdOutlineSchool className='test' />
                                 <h2>EDUCATION</h2>
                             </div>
 
@@ -42,7 +40,7 @@ function About({aboutRef}){
                             </div>
                         </article>
 
-                        <a href='#contact' className='btns btn-secondary'>Let's talk</a>
+                        <a href='#contact' className='btns btn-primary'>Let's talk</a>
                     </div>
 
                     <div className="about__image__container">
