@@ -6,6 +6,7 @@ import Tech from './components/05_tech/Tech';
 import Projects from './components/06_projects/Projects';
 import Contact from './components/07_contact/Contact';
 import Footer from './components/08_footer/Footer';
+import Cursor from './components/cursor/Cursor';
 import {motion, useScroll} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -20,6 +21,7 @@ function App() {
 
 	return (
 		<>
+		<Cursor />
 		<motion.div
 			style={{
 				scaleX: scrollYProgress,
