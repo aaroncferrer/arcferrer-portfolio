@@ -1,8 +1,8 @@
 import './projects.css';
 
-function Projects(){
+function Projects({projectsRef}){
     return(
-        <section id="projects">
+        <section id="projects" ref={projectsRef}>
             Projects
         </section>
     )
