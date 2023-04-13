@@ -5,8 +5,29 @@ import {VscTools} from 'react-icons/vsc';
 import {VscLibrary} from 'react-icons/vsc';
 import {BiMessageDetail} from 'react-icons/bi';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 function Nav(props){
+
+    const container = {
+        hidden: {opacity: 0},
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.85,
+                duration: 0.25,
+                delayChildren: 1.2,
+                staggerChildren: 0.15
+            }
+        }
+    };
+
+    const item = {
+        hidden : {scale: 0},
+        visible: {
+            scale: 1,
+        }
+    }
 
     const {aboutInView, techInView, projectsInView, contactsInView} = props;
 
@@ -30,24 +51,28 @@ function Nav(props){
     }, [aboutInView, techInView, projectsInView, contactsInView])
 
     return(
-        <nav>
+        <motion.nav
+            variants={container}
+            initial="hidden"
+            animate="visible"
+        >
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a href='#' className={activeIcon === 'header' ? 'active' : null}>
+            <motion.a variants={item} href='#' className={activeIcon === 'header' ? 'active' : null}>
                 <AiOutlineHome />
-            </a>
-            <a href='#about' className={activeIcon === 'about' ? 'active' : null}>
+            </motion.a>
+            <motion.a variants={item} href='#about' className={activeIcon === 'about' ? 'active' : null}>
                 <BsPerson />
-            </a>
-            <a href='#tech' className={activeIcon === 'tech' ? 'active' : null}>
+            </motion.a>
+            <motion.a variants={item} href='#tech' className={activeIcon === 'tech' ? 'active' : null}>
                 <VscTools />
-            </a>
-            <a href='#projects' className={activeIcon === 'projects' ? 'active' : null}>
+            </motion.a>
+            <motion.a variants={item} href='#projects' className={activeIcon === 'projects' ? 'active' : null}>
                 <VscLibrary />
-            </a>
-            <a href='#contact' className={activeIcon === 'contact' ? 'active' : null}>
+            </motion.a>
+            <motion.a variants={item} href='#contact' className={activeIcon === 'contact' ? 'active' : null}>
                 <BiMessageDetail />
-            </a>
-        </nav>
+            </motion.a>
+        </motion.nav>
     )
 }
 
