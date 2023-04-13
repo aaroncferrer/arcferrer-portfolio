@@ -3,9 +3,10 @@ import aboutImg from '../../assets/about.png'
 import SectionHeader from '../03_section_header/SectionHeader';
 import {MdOutlineSchool} from 'react-icons/md';
 
-function About(){
+function About({aboutRef}){
+
     return(
-        <section id='about'>
+        <section id='about' ref={aboutRef}>
             
             <div className="container about__container">
 

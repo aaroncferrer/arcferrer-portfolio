@@ -1,8 +1,8 @@
 import './tech.css';
 
-function Tech(){
+function Tech({techRef}){
     return(
-        <section id='tech'>
+        <section id='tech' ref={techRef}>
             Tech
         </section>
     )

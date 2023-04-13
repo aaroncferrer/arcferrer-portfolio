@@ -6,7 +6,7 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Orbitron:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
-/* CSS RESET */
+/* ===== CSS RESET ===== */
 * {
 	margin: 0;
 	padding: 0;
@@ -71,6 +71,7 @@ h1 {
 
 section {
   	margin-top: 8rem;
+	height: 75vh;
 }
 
 a {
