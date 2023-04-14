@@ -38,14 +38,15 @@ header {
     font-style: italic;
     background: var(--color-bg);
     border-radius: 30%;
-    width: max-content;
+    display: inline-block;
+    text-shadow: 6px 8px 0px rgba(0, 0, 0, 1);
 }
 
 .circle__text {
     height: 160px;
     width: 0;
     top: -3.7rem; 
-    right: 26rem;
+    display: inline-block;
     position: absolute;
     font-size: 0.8rem;
     animation: animate 10s linear infinite;
@@ -162,7 +163,6 @@ header small::after {
     .header__name {
         font-size: 4rem;
         letter-spacing: 3px;
-        width: 100%;
     }
 
     .circle__text {

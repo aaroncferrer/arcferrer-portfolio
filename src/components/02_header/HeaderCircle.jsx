@@ -5,7 +5,7 @@ function HeaderCircle(){
     const [circleText, setCircleText] = useState('');
 
     useEffect(() => {
-        const originalText = 'anthony ferrer • arcferre5 • software dev •';
+        const originalText = 'software engineer • gamer • nutritionist •';
         const circleText = originalText.split('').map((char, i) => (
             <span key={i} style={{transform: `rotate(${i * 8.2}deg)`}}>
                 {char}
