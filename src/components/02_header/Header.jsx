@@ -65,7 +65,7 @@ function Header({headerRef}){
                 
                 <motion.div className="header__buttons" variants={item}>
                     <a href={Resume} download className='btns btn-primary'>Download Resumé</a>
-                    <a href='#contact' className='btns btn-secondary'>Let's talk</a>
+                    <a href='#contact' className='btns btn-secondary'>View Projects</a>
                 </motion.div>
             </motion.div>
 

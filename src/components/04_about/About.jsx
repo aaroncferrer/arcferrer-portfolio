@@ -18,7 +18,7 @@ function About({aboutRef}){
                         </p>
 
                         <p>
-                            I've also spent  2 years as a <span>project manager</span> for a copywriting account. Working as a middleman between clients and my team of copywriters, I've gained valuable experience in communication. But when I'm not busy, you can probably find me <span>dancing</span> or curled up with a good paperback <span>manga</span>. Life is all about balance, after all!
+                            I've also spent  2 years as a <span>project manager</span> for a copywriting account. Working as a middleman between clients and my team of copywriters, I've gained valuable experience in communication. But when I'm not busy, you can probably find me <span>dancing</span> or curled up with a good paperback <span>manga</span>. Life is all about balance, after all! <span>🤓</span>
                         </p>
 
                         <article className="about__education">
@@ -40,7 +40,7 @@ function About({aboutRef}){
                             </div>
                         </article>
 
-                        <a href='#contact' className='btns btn-primary'>Let's talk</a>
+                        <a href='#contact' className='btns btn-primary'>View Projects</a>
                     </div>
 
                     <div className="about__image__container">
