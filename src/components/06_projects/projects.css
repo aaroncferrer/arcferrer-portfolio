@@ -11,14 +11,120 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+.project {
+    position: relative;
+}
+
+.project__desc {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+    font-family: var(--font-text);
+    opacity: 0;
+    transition: var(--transition-opacity);
+}
+
+.project__desc p {
+    margin-bottom: -0.25rem;
+}
+
+.project__desc small {
+    color: var(--color-light);
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.8) 0%, 
+        rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0;
+    transition: var(--transition-opacity);
+}
+  
+.project:hover::before {
+    opacity: 1;
+}
+
+.project:hover .project__desc {
+    opacity: 1;
+}
   
 .square {
-    background-color: #f1c40f;
     height: 21rem;
 }
   
 .rectangle {
-    background-color: #2ecc71;
     height: 17rem;
 }
-  
+
+/* MODAL */
+.modal-content {
+    font-family: var(--font-text);
+    color: var(--color-light);
+    background: var(--color-bg);
+}
+
+.modal-title {
+    color: var(--color-white);
+}
+
+.modal__desc {
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.modal-footer a {
+    margin: 0;
+    font-size: 1.8rem;
+    margin-left: 1.2rem;
+}
+
+/* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px){
+    .square {
+        height: 12rem;
+    }
+      
+    .rectangle {
+        height: 9rem;
+    }
+
+    .modal-dialog {
+        max-width: 80%;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
+@media screen and (max-width: 600px){
+    .projects__grid {
+        width: var(--container-width-sm);
+        margin-top: 2.5rem;
+    }
+
+    .square {
+        height: 8.5rem;
+    }
+      
+    .rectangle {
+        height: 6rem;
+    }
+
+    .modal__desc {
+        font-size: 0.7rem;
+    }
+
+    .modal-dialog {
+        margin: 0 auto;
+    }
+}
