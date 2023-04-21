@@ -60,7 +60,18 @@ function Header({headerRef}){
             </motion.div>
 
             <HeaderSocials />
-            <h1 className='watermark'>Portfolio</h1>
+            <motion.h1 
+                className='watermark'
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{ 
+                    duration: 0.4, 
+                    ease: "easeInOut",
+                    delay: 0.25
+            }}
+            >
+                Portfolio
+            </motion.h1>
         </header>
     )
 }

@@ -8,12 +8,12 @@ import { motion } from 'framer-motion';
 function Nav(props){
 
     const container = {
-        hidden: {opacity: 0},
+        hidden: {scale: 0},
         visible: {
-            opacity: 1,
+            scale: 1,
             transition: {
                 delay: 0.85,
-                duration: 0.25,
+                duration: 0.40,
                 delayChildren: 1.2,
                 staggerChildren: 0.15
             }
