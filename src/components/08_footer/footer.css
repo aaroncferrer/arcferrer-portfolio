@@ -90,3 +90,31 @@
     font-size: 0.8rem;
     margin-bottom: 0;
 }
+
+/* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px){
+    .footer__sections, .footer__copyright {
+        width: 85%;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
+@media screen and (max-width: 600px){
+    .footer__sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer__copyright {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer__src {
+        justify-self: unset;
+    }
+}

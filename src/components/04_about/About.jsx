@@ -14,7 +14,7 @@ function About({aboutRef}){
                 <div className="about__content">
                     <div className="about__info">
                         <p>
-                            I'm a Nutrition graduate but my passion for web development led me down a different path. I initially started with basic HTML and CSS, but soon found myself fully immersed in the world of web development. With a small background in <span>graphic design</span>, I found frontend to be a natural fit, but I'm also looking forward to expanding my skill set to include backend work as well. Despite the steep learning curve, I'm loving the process and find it incredibly fulfilling.
+                            I'm a licensed Nutritionist-Dietitian but my passion for web development led me down a different path. I initially started with basic HTML and CSS, but soon found myself fully immersed in the world of web development. With a small background in <span>graphic design</span>, I found frontend to be a natural fit, but I'm also looking forward to expanding my skill set to include backend work as well. Despite the steep learning curve, I'm loving the process and find it incredibly fulfilling.
                         </p>
 
                         <p>
