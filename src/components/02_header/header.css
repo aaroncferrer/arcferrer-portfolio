@@ -1,26 +1,3 @@
-/* ===== LOGO ===== */
-.logo {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 800;
-    font-size: 1.3rem;
-    position: fixed;
-    top: 3%;
-    left: 3.5%;
-    letter-spacing: 3px;
-    border: 2px solid var(--color-orange-primary);
-    border-radius: 50%;
-    padding: 0.55rem;
-    color: var(--color-white);
-    transition: var(--transition);
-}
-
-.logo:hover {
-    border-color: var(--color-white);
-    color: var(--color-orange-primary);
-}
-
-/* ===== HEADER ===== */
-
 header {
     height: 100vh;
     padding-top: 10rem;
@@ -120,12 +97,25 @@ header {
 .header__socials::after {
     content: '';
     width: 1px;
-    height: 10rem;
+    height: 8.5rem;
     background-color: var(--color-orange-primary);
 }
 
+.watermark {
+    writing-mode: vertical-lr;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    position: fixed;
+    right: -5%;
+    transform: rotate(180deg);
+    bottom: -10%;
+    font-size: 13.5rem;
+    color: #142226bc;
+    z-index: -1;
+}
+
 /* ===== HEADER EMAIL ===== */
-header small {
+/* header small {
     writing-mode: vertical-rl;
     position: fixed;
     right: 5%;
@@ -146,7 +136,7 @@ header small::after {
     height: 10rem;
     background-color: var(--color-orange-primary);
     margin-top: 1rem;
-}
+} */
 
 /* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px){
@@ -166,6 +156,10 @@ header small::after {
     }
 
     .circle__text {
+        display: none;
+    }
+    
+    .watermark {
         display: none;
     }
 }
@@ -189,5 +183,9 @@ header small::after {
         width: 90%;
         font-size: 0.8rem;
         font-weight: 300;
+    }
+    
+    .logo {
+        position: absolute;
     }
 }

@@ -37,7 +37,9 @@ function Projects({projectsRef}){
                         <img src={project.imgSrc} alt={project.imgAlt} className={project.shape} />
                         <div className="project__desc">
                             <p>{project.title}</p>
-                            <small>{project.tech}</small>
+                            {project.techs.map((tech, index) => (
+                                <small key={index}>{tech}</small>
+                            ))}
                         </div>
                     </div>
                     ))}
@@ -55,7 +57,9 @@ function Projects({projectsRef}){
                         <img src={project.imgSrc} alt={project.imgAlt} className={project.shape} />
                         <div className="project__desc">
                             <p>{project.title}</p>
-                            <small>{project.tech}</small>
+                            {project.techs.map((tech, index) => (
+                                <small key={index}>{tech}</small>
+                            ))}
                         </div>
                     </div>
                     ))}

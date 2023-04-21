@@ -40,7 +40,7 @@ function About({aboutRef}){
                             </div>
                         </article>
 
-                        <a href='#contact' className='btns btn-primary'>View Projects</a>
+                        <a href='#projects' className='btns btn-primary'>View Projects</a>
                     </div>
 
                     <div className="about__image__container">

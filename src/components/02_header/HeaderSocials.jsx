@@ -1,7 +1,6 @@
 import {FaGithub} from 'react-icons/fa';
-import {BsLinkedin} from 'react-icons/bs';
-import {BsTwitter} from 'react-icons/bs';
-import {BsInstagram} from 'react-icons/bs';
+import {BsLinkedin, BsTwitter, BsInstagram} from 'react-icons/bs';
+import {AiOutlineMail} from 'react-icons/ai'
 import {motion} from 'framer-motion';
 
 function HeaderSocials(){
@@ -22,9 +21,10 @@ function HeaderSocials(){
                 <a href="https://www.linkedin.com/in/anthony-ferrer-rnd-549a30191/" target="_blank" rel='noreferrer'><BsLinkedin /></a>
                 <a href="https://twitter.com/aaroncferrer" target="_blank" rel='noreferrer'><BsTwitter /></a>
                 <a href="https://www.instagram.com/aaroncferrer/" target="_blank" rel='noreferrer'><BsInstagram /></a>
+                <a href="mailto:arcferrer5@gmail.com" target='_blank' rel='noreferrer'><AiOutlineMail /></a>
             </div>
 
-            <small>arcferrer5@gmail.com</small>
+            {/* <small>arcferrer5@gmail.com</small> */}
         </motion.div>
     )
 }

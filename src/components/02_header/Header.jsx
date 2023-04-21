@@ -3,6 +3,7 @@ import Resume from '../../assets/ARCFerrer_Resume_2023.pdf';
 import HeaderSocials from './HeaderSocials';
 import {motion} from 'framer-motion';
 import HeaderCircle from './HeaderCircle';
+import Logo from '../logo/Logo';
 
 function Header({headerRef}){
 
@@ -28,19 +29,8 @@ function Header({headerRef}){
 
     return(
         <header ref={headerRef}>
-            <motion.a 
-                href='#'
-                className="logo"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ 
-                    duration: 0.4, 
-                    ease: "easeInOut",
-                    delay: 0.3
-                }}
-            >
-                AF
-            </motion.a>
+            
+            <Logo />
 
             <motion.div 
                 className="container header__container"
@@ -65,11 +55,12 @@ function Header({headerRef}){
                 
                 <motion.div className="header__buttons" variants={item}>
                     <a href={Resume} download className='btns btn-primary'>Download Resumé</a>
-                    <a href='#contact' className='btns btn-secondary'>View Projects</a>
+                    <a href='#projects' className='btns btn-secondary'>View Projects</a>
                 </motion.div>
             </motion.div>
 
             <HeaderSocials />
+            <h1 className='watermark'>Portfolio</h1>
         </header>
     )
 }

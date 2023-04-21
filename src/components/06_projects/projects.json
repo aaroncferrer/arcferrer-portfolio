@@ -7,7 +7,7 @@
             "imgAlt": "Banking-Budget Application",
             "shape": "square",
             "title": "Banking-Budget Application",
-            "tech": "React, CSS, Bootstrap",
+            "techs": ["React", "CSS", "Bootstrap"],
             "desc" : "A simple and user-friendly banking app built using React.js. Keep track of your finances and budget with ease!",
             "github" : "https://github.com/aaroncferrer/banking-app",
             "demo" : "https://banking-app-delta.vercel.app/"
@@ -19,7 +19,7 @@
             "imgAlt": "Momentum Clone Application",
             "shape": "rectangle",
             "title": "Momentum Clone Application",
-            "tech": "HTML, CSS, JavaScript, Bootstrap",
+            "techs": ["HTML", "CSS", "JavaScript", "Bootstrap"],
             "desc" : "Momentum browser application inspired by the momentum extension for Google Chrome - made with HTML, CSS, Bootstrap, and Vanilla JavaScript.",
             "github" : "https://github.com/aaroncferrer/momentum-app",
             "demo" : "https://aaroncferrer.github.io/momentum-app/"
@@ -31,7 +31,7 @@
             "imgAlt": "Slack Clone Application",
             "shape": "square",
             "title": "Slack Clone Application",
-            "tech": "React, CSS, Bootstrap",
+            "techs": ["React", "CSS", "Bootstrap"],
             "desc" : "Our React-based chat app, inspired by Slack, allows users to create accounts, send messages, and collaborate with others in real-time. Stay connected and productive with our easy-to-use platform.",
             "github" : "https://github.com/rthrx44/slack-app-batch26",
             "demo" : "https://github.com/rthrx44/slack-app-batch26"
@@ -45,7 +45,7 @@
             "imgAlt": "E-Commerce Application",
             "shape": "rectangle",
             "title": "E-Commerce Application",
-            "tech": "MongoDB, Express, React, Node, Bootstrap, CSS",
+            "techs": ["MongoDB", "Express", "React", "Node", "Bootstrap", "CSS"],
             "desc" : "This is a full-stack e-commerce web application built with the MERN stack (MongoDB, Express, React.js, and Node.js), designed for sneaker enthusiasts who want to easily browse and purchase the latest kicks.",
             "github" : "https://github.com/aaroncferrer/sneaker-ecommerce",
             "demo" : "https://sneaker-ecommerce-xi.vercel.app/"
@@ -57,7 +57,7 @@
             "imgAlt": "Tic-Tac-Toe Application",
             "shape": "square",
             "title": "Tic-Tac-Toe Application",
-            "tech": "HTML, CSS, JavaScript",
+            "techs": ["HTML", "CSS", "JavaScript"],
             "desc" : "Web-based tic-tac-toe - made with HTML, CSS, and Vanilla JavaScript.",
             "github" : "https://github.com/aaroncferrer/tic-tac-toe",
             "demo" : "https://aaroncferrer.github.io/tic-tac-toe/"
@@ -69,7 +69,7 @@
             "imgAlt": "Sample Landing Page",
             "shape": "square",
             "title": "Sample Landing Page",
-            "tech": "HTML, CSS, JavaScript, Responsive Web Design",
+            "techs": ["HTML", "CSS", "JavaScript", "Responsive Web Design"],
             "desc" : "A sample product landing page using HTML, customized through CSS with responsiveness integrated using media queries.",
             "github" : "https://github.com/aaroncferrer/sample-landing-page",
             "demo" : "https://aaroncferrer.github.io/sample-landing-page/"

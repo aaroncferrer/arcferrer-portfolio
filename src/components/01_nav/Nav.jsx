@@ -1,10 +1,7 @@
 import './nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
+import {AiOutlineArrowDown, AiOutlineHome} from 'react-icons/ai';
 import {BsPerson} from 'react-icons/bs';
-import {VscTools} from 'react-icons/vsc';
-import {VscLibrary} from 'react-icons/vsc';
-import {BiMessageDetail} from 'react-icons/bi';
-import {AiOutlineArrowUp} from 'react-icons/ai';
+import {VscTools, VscLibrary} from 'react-icons/vsc';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -29,34 +26,35 @@ function Nav(props){
             scale: 1,
         }
     }
-
-    const {aboutInView, techInView, projectsInView, contactsInView, footerInView} = props;
+    
+    const {headerInView, aboutInView, techInView, projectsInView, footerInView} = props;
     const [activeIcon, setActiveIcon] = useState('header');
-    const [showArrow, setShowArrow] = useState(false);
 
     useEffect(() => {
-        if(footerInView){
-            setActiveIcon(null);
-            setShowArrow(true);
+        if(headerInView){
+            setActiveIcon('header');
+            console.log(activeIcon)
             return
         }
         if(aboutInView){
             setActiveIcon('about');
+            console.log(activeIcon)
             return
         }
         if(techInView){
             setActiveIcon('tech');
+            console.log(activeIcon)
             return
         }if(projectsInView){
             setActiveIcon('projects');
+            console.log(activeIcon)
             return
-        }if(contactsInView){
-            setActiveIcon('contact');
+        }if(footerInView){
+            setActiveIcon('footer');
+            console.log(activeIcon)
             return
         }
-        setActiveIcon('header');
-        setShowArrow(false);
-    }, [aboutInView, techInView, projectsInView, contactsInView, footerInView])
+    }, [headerInView, aboutInView, techInView, projectsInView, footerInView, activeIcon])
 
     return(
         <>
@@ -78,18 +76,10 @@ function Nav(props){
             <motion.a variants={item} href='#projects' className={activeIcon === 'projects' ? 'active' : null}>
                 <VscLibrary />
             </motion.a>
-            <motion.a variants={item} href='#contact' className={activeIcon === 'contact' ? 'active' : null}>
-                <BiMessageDetail />
+            <motion.a variants={item} href='#footer' className={activeIcon === 'footer' ? 'active' : null}>
+                <AiOutlineArrowDown />
             </motion.a>
-        </motion.nav>
-
-        {showArrow && (
-            <nav className={`nav__arrow ${footerInView ? 'show' : ''}`}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href='#' className='arrowUp'><AiOutlineArrowUp /></a>
-            </nav>
-        )}
-            
+        </motion.nav>         
         </>
     )
 }
