@@ -1,6 +1,5 @@
 import {FaGithub} from 'react-icons/fa';
 import {BsLinkedin, BsTwitter, BsInstagram} from 'react-icons/bs';
-import {AiOutlineMail} from 'react-icons/ai'
 import {motion} from 'framer-motion';
 
 function HeaderSocials(){
