@@ -15,7 +15,7 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-	/* cursor: none; */
+	cursor: none;
 }
 
 :root {
