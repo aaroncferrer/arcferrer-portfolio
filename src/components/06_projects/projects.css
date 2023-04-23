@@ -1,20 +1,24 @@
 .projects__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 4rem auto 0;
+    gap: 1.5rem;
+    margin: 4.5rem auto 0;
     width: var(--container-width-md);
+    position: relative;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .project {
     position: relative;
     border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
 }
 
 .project__desc {
