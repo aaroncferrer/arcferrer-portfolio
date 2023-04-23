@@ -1,0 +1,33 @@
+.circle__text {
+    height: 160px;
+    width: 0;
+    top: -3.7rem; 
+    display: inline-block;
+    position: absolute;
+    font-size: 0.8rem;
+    animation: animate 10s linear infinite;
+    z-index: -1;
+    color: var(--color-orange-primary);
+    font-family: var(--font-secondary);
+}
+
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.circle__text span {
+    position: absolute;
+    transform-origin: 0 80px;
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
+@media screen and (max-width: 600px){
+    .circle__text {
+        display: none;
+    }
+}

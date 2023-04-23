@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { BsGithub } from 'react-icons/bs';
 import { BsArrowUpRightCircleFill } from 'react-icons/bs';
+import CircleText from '../circleText/CircleText';
 
 function Projects({projectsRef}){
 
@@ -27,13 +28,15 @@ function Projects({projectsRef}){
 
             <div className="projects__grid">
                 {/* LEFT COLUMN PROJECTS */}
+                <CircleText text={'click proj to view details • sample works •'} />
                 <div className="projects projects__left">
                     {leftColumnProjects.map((project) => (
                     <div 
                         className="project" 
                         key={project.id}
                         onClick={() => {handleClick(project); setShowModal(true)}}
-                    >
+                    >   
+                        
                         <img src={project.imgSrc} alt={project.imgAlt} className={project.shape} />
                         <div className="project__desc">
                             <p>{project.title}</p>

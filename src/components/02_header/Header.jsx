@@ -2,8 +2,8 @@ import './header.css';
 import Resume from '../../assets/ARCFerrer_Resume_2023.pdf';
 import HeaderSocials from './HeaderSocials';
 import {motion} from 'framer-motion';
-import HeaderCircle from './HeaderCircle';
 import Logo from '../logo/Logo';
+import CircleText from '../circleText/CircleText';
 
 function Header({headerRef}){
 
@@ -42,7 +42,7 @@ function Header({headerRef}){
                 
                 <motion.div variants={item} class="header__name__container">
                     <h1 class="header__name">ANTHONY FERRER</h1>
-                    <HeaderCircle />
+                    <CircleText text={'software engineer • gamer • nutritionist •'}/>
                 </motion.div>
                 
 
