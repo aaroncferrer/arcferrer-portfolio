@@ -19,7 +19,7 @@ function Projects({projectsRef}){
     }
 
     return(
-        <section id="projects" ref={projectsRef}>
+        <section id="projects" ref={projectsRef} data-aos="fade-up" data-aos-once>
             
             <div className="container projects__container">
 

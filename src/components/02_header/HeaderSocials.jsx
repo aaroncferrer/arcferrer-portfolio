@@ -21,7 +21,6 @@ function HeaderSocials(){
                 <a href="https://www.linkedin.com/in/anthony-ferrer-rnd-549a30191/" target="_blank" rel='noreferrer'><BsLinkedin /></a>
                 <a href="https://twitter.com/aaroncferrer" target="_blank" rel='noreferrer'><BsTwitter /></a>
                 <a href="https://www.instagram.com/aaroncferrer/" target="_blank" rel='noreferrer'><BsInstagram /></a>
-                <a href="mailto:arcferrer5@gmail.com" target='_blank' rel='noreferrer'><AiOutlineMail /></a>
             </div>
 
             {/* <small>arcferrer5@gmail.com</small> */}

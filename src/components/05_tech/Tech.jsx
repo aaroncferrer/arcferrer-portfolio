@@ -3,7 +3,7 @@ import './tech.css';
 
 function Tech({techRef}){
     return(
-        <section id='tech' ref={techRef}>
+        <section id='tech' ref={techRef} data-aos="fade-up" data-aos-once>
             
             <div className="container tech__container">
 

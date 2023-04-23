@@ -97,7 +97,7 @@ header {
 .header__socials::after {
     content: '';
     width: 1px;
-    height: 8.5rem;
+    height: 10em;
     background-color: var(--color-orange-primary);
 }
 

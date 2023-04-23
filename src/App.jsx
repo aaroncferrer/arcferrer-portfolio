@@ -8,6 +8,9 @@ import Footer from './components/08_footer/Footer';
 import Cursor from './components/cursor/Cursor';
 import {motion, useScroll} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
 
@@ -18,6 +21,10 @@ function App() {
 	const [techRef, techInView] = useInView({ threshold: 0.5 });
 	const [projectsRef, projectsInView] = useInView({ threshold: 0.5 });
 	const [footerRef, footerInView] = useInView({ threshold: 1 });
+
+	useEffect(() => {
+		AOS.init({duration: 1000, anchorPlacement: 'center-bottom'})
+	}, [])
 
 	return (
 		<>

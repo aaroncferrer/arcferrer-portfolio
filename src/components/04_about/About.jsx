@@ -5,7 +5,7 @@ import SectionHeader from '../03_section_header/SectionHeader';
 function About({aboutRef}){
 
     return(
-        <section id='about' ref={aboutRef}>
+        <section id='about' ref={aboutRef} data-aos="fade-up" data-aos-once>
             
             <div className="container about__container">
 
