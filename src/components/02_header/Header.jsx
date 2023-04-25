@@ -30,7 +30,10 @@ function Header({headerRef}){
     return(
         <header ref={headerRef}>
             
-            <Logo />
+            <div className="header__logo">
+                <Logo />
+            </div>
+            
 
             <motion.div 
                 className="container header__container"

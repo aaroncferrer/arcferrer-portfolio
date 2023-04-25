@@ -1,6 +1,7 @@
 import './footer.css';
 import { FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import Logo from '../logo/Logo';
 
 function Footer({footerRef}){
     return(
@@ -8,7 +9,7 @@ function Footer({footerRef}){
             
             <div className="container footer__container">
                 <div className="footer__logo">
-                    <span>AF</span>
+                    <Logo />
                 </div>
                 <div className="footer__sections">
                     <a href='#about'>HOME</a>
