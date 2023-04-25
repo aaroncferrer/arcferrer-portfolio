@@ -4,6 +4,13 @@ header {
     overflow: hidden;
 }
 
+.header__logo {
+    position: fixed;
+    top: 3%;
+    left: 3.5%;
+    font-size: 1.3rem;
+}
+
 .header__name__container {
     position: relative;
 }
@@ -158,7 +165,7 @@ header small::after {
         font-weight: 300;
     }
     
-    .logo {
+    .header__logo {
         position: absolute;
     }
 }
