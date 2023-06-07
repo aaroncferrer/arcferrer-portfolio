@@ -7,7 +7,7 @@ function Tech({techRef}){
             
             <div className="container tech__container">
 
-            <SectionHeader sectionNumber="02" sectionName="Tech I Use"/>
+            <SectionHeader sectionNumber="02" sectionName="Tech & Tools"/>
 
             <div className="techs">
                 <div className="tech_item">
@@ -21,6 +21,10 @@ function Tech({techRef}){
                 <div className="tech_item">
                     <p>JavaScript</p>
                     <i class="devicon-javascript-plain colored tech"></i>
+                </div>
+                <div className="tech_item">
+                    <p>TypeScript</p>
+                    <i class="devicon-typescript-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
                     <p>Bootstrap</p>
@@ -51,12 +55,16 @@ function Tech({techRef}){
                     <i class="devicon-vscode-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>Photoshop</p>
-                    <i class="devicon-photoshop-plain colored tech"></i>
+                    <p>Jira</p>
+                    <i class="devicon-jira-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>Canva</p>
-                    <i class="devicon-canva-original colored tech"></i>
+                    <p>Bitbucket</p>
+                    <i class="devicon-bitbucket-original colored tech"></i>
+                </div>
+                <div className="tech_item">
+                    <p>Docker</p>
+                    <i class="devicon-docker-plain colored tech"></i>
                 </div>
             </div>
 
