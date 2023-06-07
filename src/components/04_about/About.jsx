@@ -21,9 +21,18 @@ function About({aboutRef}){
                             I've also spent  2 years as a <span>project manager</span> for a copywriting account. Working as a middleman between clients and my team of copywriters, I've gained valuable experience in communication. But when I'm not busy, you can probably find me <span>dancing</span> or curled up with a good paperback <span>manga</span>. Life is all about balance, after all! <span>🤓</span>
                         </p>
 
+                        <p>
+                            Currently, I am gaining practical experience as a software engineer intern at Focus HQ, engaging in Agile methodologies, code reviews, and pair programming sessions. Under the guidance of our tech lead, I have successfully converted non-SPA pages to SPA using React with TypeScript, resulting in improved user experiences and performance. I have also collaborated with the team to create testing files using Jest and React Testing Library, ensuring the reliability of our SPAs and their components.
+                        </p>
+
                         <article className="about__education">
                             <div className="about__education__header">
-                                <h2>EDUCATION</h2>
+                                <h2>EDUCATION | EXPERIENCE</h2>
+                            </div>
+
+                            <div className="about__educations">
+                                <small>May 2023 - Present</small>
+                                <small>Focus HQ</small>
                             </div>
 
                             <div className="about__educations">
