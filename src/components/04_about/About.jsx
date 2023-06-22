@@ -22,7 +22,7 @@ function About({aboutRef}){
                         </p>
 
                         <p>
-                            Currently, I am gaining practical experience as a software engineer intern at Focus HQ, engaging in Agile methodologies, code reviews, and pair programming sessions. Under the guidance of our tech lead, I have successfully converted non-SPA pages to SPA using React with TypeScript, resulting in improved user experiences and performance. I have also collaborated with the team to create testing files using Jest and React Testing Library, ensuring the reliability of our SPAs and their components.
+                            I was able to gain practical experience as a software engineer intern at Focus HQ, engaging in Agile methodologies, code reviews, and pair programming sessions. Under the guidance of our tech lead, I have successfully converted non-SPA pages to SPA using React with TypeScript, resulting in improved user experiences and performance. I have also collaborated with the team to create testing files using Jest and React Testing Library, ensuring the reliability of our SPAs and their components.
                         </p>
 
                         <article className="about__education">
