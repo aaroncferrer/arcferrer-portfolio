@@ -31,7 +31,7 @@ function About({aboutRef}){
                             </div>
 
                             <div className="about__educations">
-                                <small>May 2023 - Present</small>
+                                <small>May 2023 - June 2023</small>
                                 <small>Focus HQ</small>
                             </div>
 
