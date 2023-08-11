@@ -36,11 +36,7 @@
     font-size: 4.5rem;
 }
 
-.techs .tech_item:nth-child(10) .tech {
-    color: var(--color-light);
-}
-
-.techs .tech_item:nth-child(8) .tech {
+.techs .tech_item:nth-child(11) .tech {
     color: var(--color-light);
 }
 

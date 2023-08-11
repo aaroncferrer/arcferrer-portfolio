@@ -28,16 +28,16 @@
         },
         {
             "id": 3,
-            "imgSrc": "./projects/slack01.png",
-            "imgSrc2": "./projects/slack02.png",
-            "imgAlt": "Slack Clone Application",
+            "imgSrc": "./projects/journal01.png",
+            "imgSrc2": "./projects/journal02.png",
+            "imgAlt": "Journal Application",
             "shape": "square",
-            "title": "Slack Clone Application",
-            "techs": ["React", "CSS", "Bootstrap"],
-            "desc" : "Our React-based chat app, inspired by Slack, allows users to create accounts, send messages, and collaborate with others in real-time. Stay connected and productive with our easy-to-use platform.",
-            "github" : "https://github.com/rthrx44/slack-app-batch26",
-            "demo" : "https://github.com/rthrx44/slack-app-batch26",
-            "status" : "Under development"
+            "title": "Journal Application",
+            "techs": ["Ruby", "Rails", "RSpec", "React", "Bootstrap"],
+            "desc" : "A feature-rich application powered by Ruby on Rails backend with TDD and RESTful architecture. Secure user authentication using bcrypt and JWT. Intuitive React frontend with Bootstrap. PostgreSQL for data management. Deployed on Render (backend) and Vercel (frontend) for seamless hosting. High test code coverage with RSpec and simplecov.",
+            "github" : "https://github.com/aaroncferrer/journal",
+            "demo" : "https://journal-avion-arf.vercel.app/",
+            "status" : ""
         }
     ],
     "rightColumnProjects": [
