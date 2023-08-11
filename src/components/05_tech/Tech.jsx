@@ -12,7 +12,7 @@ function Tech({techRef}){
             <div className="techs">
                 <div className="tech_item">
                     <p>HTML</p>
-                    <i class="ewan devicon-html5-plain colored tech"></i>
+                    <i class="devicon-html5-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
                     <p>CSS</p>
@@ -35,16 +35,20 @@ function Tech({techRef}){
                     <i class="devicon-react-original colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>NodeJS</p>
-                    <i class="devicon-nodejs-plain colored tech"></i>
+                    <p>Ruby</p>
+                    <i class="devicon-ruby-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>ExpressJS</p>
-                    <i class="devicon-express-original colored tech"></i>
+                    <p>Rails</p>
+                    <i class="devicon-rails-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>MongoDB</p>
-                    <i class="devicon-mongodb-plain colored tech"></i>
+                    <p>PostgreSQL</p>
+                    <i class="devicon-postgresql-plain colored tech"></i>
+                </div>
+                <div className="tech_item">
+                    <p>Git</p>
+                    <i class="devicon-git-plain colored tech"></i>
                 </div>
                 <div className="tech_item">
                     <p>Github</p>
@@ -63,8 +67,8 @@ function Tech({techRef}){
                     <i class="devicon-bitbucket-original colored tech"></i>
                 </div>
                 <div className="tech_item">
-                    <p>Docker</p>
-                    <i class="devicon-docker-plain colored tech"></i>
+                    <p>RSpec</p>
+                    <i class="devicon-rspec-original colored tech"></i>
                 </div>
             </div>
 
