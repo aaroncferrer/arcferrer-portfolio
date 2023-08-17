@@ -1,0 +1,84 @@
+{
+    "leftColumnProjects": [
+        {
+            "id": 1,
+            "imgSrc": "./projects/banking01.png",
+            "imgSrc2": "./projects/banking02.png",
+            "imgAlt": "Banking-Budget Application",
+            "shape": "square",
+            "title": "Banking-Budget Application",
+            "techs": ["React", "CSS", "Bootstrap"],
+            "desc" : "A simple and user-friendly banking app built using React.js. Keep track of your finances and budget with ease!",
+            "github" : "https://github.com/aaroncferrer/banking-app",
+            "demo" : "https://banking-app-delta.vercel.app/",
+            "status" : ""
+        },
+        {
+            "id": 2,
+            "imgSrc": "./projects/momentum01.gif",
+            "imgSrc2": "./projects/momentum02.png",
+            "imgAlt": "Momentum Clone Application",
+            "shape": "rectangle",
+            "title": "Momentum Clone Application",
+            "techs": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+            "desc" : "Momentum browser application inspired by the momentum extension for Google Chrome - made with HTML, CSS, Bootstrap, and Vanilla JavaScript.",
+            "github" : "https://github.com/aaroncferrer/momentum-app",
+            "demo" : "https://aaroncferrer.github.io/momentum-app/",
+            "status" : ""
+        },
+        {
+            "id": 3,
+            "imgSrc": "./projects/journal01.png",
+            "imgSrc2": "./projects/journal02.png",
+            "imgAlt": "Journal Application",
+            "shape": "square",
+            "title": "Journal Application",
+            "techs": ["Ruby", "Rails", "RSpec", "React", "Bootstrap"],
+            "desc" : "A feature-rich application powered by Ruby on Rails backend with TDD and RESTful architecture. Secure user authentication using bcrypt and JWT. Intuitive React frontend with Bootstrap. PostgreSQL for data management. Deployed on Render (backend) and Vercel (frontend) for seamless hosting. High test code coverage with RSpec and simplecov.",
+            "github" : "https://github.com/aaroncferrer/journal",
+            "demo" : "https://journal-avion-arf.vercel.app/",
+            "status" : ""
+        }
+    ],
+    "rightColumnProjects": [
+        {
+            "id": 4,
+            "imgSrc": "./projects/ecomm01.gif",
+            "imgSrc2": "./projects/ecomm02.png",
+            "imgAlt": "E-Commerce Application",
+            "shape": "rectangle",
+            "title": "E-Commerce Application",
+            "techs": ["MongoDB", "Express", "React", "Node", "Bootstrap", "CSS"],
+            "desc" : "This is a full-stack e-commerce web application built with the MERN stack (MongoDB, Express, React.js, and Node.js), designed for sneaker enthusiasts who want to easily browse and purchase the latest kicks.",
+            "github" : "https://github.com/aaroncferrer/sneaker-ecommerce",
+            "demo" : "https://sneaker-ecommerce-xi.vercel.app/",
+            "status" : ""
+        },
+        {
+            "id": 5,
+            "imgSrc": "./projects/tictactoe01.png",
+            "imgSrc2": "./projects/tictactoe02.png",
+            "imgAlt": "Tic-Tac-Toe Application",
+            "shape": "square",
+            "title": "Tic-Tac-Toe Application",
+            "techs": ["HTML", "CSS", "JavaScript"],
+            "desc" : "Web-based tic-tac-toe - made with HTML, CSS, and Vanilla JavaScript.",
+            "github" : "https://github.com/aaroncferrer/tic-tac-toe",
+            "demo" : "https://aaroncferrer.github.io/tic-tac-toe/",
+            "status" : ""
+        },
+        {
+            "id": 6,
+            "imgSrc": "./projects/landing01.gif",
+            "imgSrc2": "./projects/landing02.png",
+            "imgAlt": "Sample Landing Page",
+            "shape": "square",
+            "title": "Sample Landing Page",
+            "techs": ["HTML", "CSS", "JavaScript", "Responsive Web Design"],
+            "desc" : "A sample product landing page using HTML, customized through CSS with responsiveness integrated using media queries.",
+            "github" : "https://github.com/aaroncferrer/sample-landing-page",
+            "demo" : "https://aaroncferrer.github.io/sample-landing-page/",
+            "status" : ""
+        }
+    ]
+}

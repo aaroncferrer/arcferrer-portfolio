@@ -1,0 +1,106 @@
+#footer {
+    margin-top: 8rem;
+    background: var(--color-bg-variant);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.footer__logo {  
+    font-size: 1.8rem;
+}
+
+.footer__sections {
+    border-top: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin: 3rem 0;
+}
+
+.footer__sections a {
+    color: var(--color-white);
+    font-family: var(--font-text);
+    position: relative;
+}
+
+.footer__sections a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: var(--color-white);
+    transition: var(--transition);
+}
+
+.footer__sections a:hover::before {
+    width: 100%;
+}
+
+.footer__copyright {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+}
+
+.copyright__socials {
+    justify-self: center;
+    display: flex;
+    font-size: 1.7rem;
+    gap: 1.2rem;
+}
+
+.footer__src {
+    justify-self: end;
+}
+
+.footer__src:hover {
+    color: var(--color-orange-primary);
+}
+
+.footer__copyright p, .footer__src {
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px){
+    .footer__sections, .footer__copyright {
+        width: 85%;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
+@media screen and (max-width: 600px){
+    .footer__sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer__copyright {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer__src {
+        justify-self: unset;
+    }
+}

@@ -1,34 +1,32 @@
-/* ===== LOGO ===== */
-.logo {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    position: fixed;
-    top: 3%;
-    left: 3.5%;
-    letter-spacing: 3px;
-    cursor: default;
-    border: 1px solid var(--color-orange-primary);
-    border-radius: 50%;
-    padding: 0.55rem;
-    color: var(--color-white);
-    transition: var(--transition);
-}
-
-.logo:hover {
-    border: 1px solid var(--color-white);
-    color: var(--color-orange-primary);
-}
-
-/* ===== HEADER ===== */
-
 header {
     height: 100vh;
-    padding-top: 9.5rem;
+    padding-top: 10rem;
     overflow: hidden;
 }
 
-.header__container h1 {
+.header__logo {
+    position: fixed;
+    top: 3%;
+    left: 3.5%;
+    font-size: 1.3rem;
+}
+
+.header__name__container {
+    position: relative;
+}
+
+.header__name {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    font-style: italic;
+    background: var(--color-bg);
+    border-radius: 30%;
+    display: inline-block;
+    text-shadow: 6px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.header__slogan {
     font-size: 4.4rem;
     font-weight: 700;
 }
@@ -45,7 +43,7 @@ header {
     color: var(--color-light);
 }
 
-.header__container span {
+.header__slogan span {
     color: var(--color-orange-secondary);
 }
 
@@ -79,12 +77,25 @@ header {
 .header__socials::after {
     content: '';
     width: 1px;
-    height: 10rem;
+    height: 10em;
     background-color: var(--color-orange-primary);
 }
 
+.watermark {
+    writing-mode: vertical-lr;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    position: fixed;
+    right: -5%;
+    transform: rotate(180deg);
+    bottom: -10%;
+    font-size: 13.5rem;
+    color: #142226bc;
+    z-index: -1;
+}
+
 /* ===== HEADER EMAIL ===== */
-header small {
+/* header small {
     writing-mode: vertical-rl;
     position: fixed;
     right: 5%;
@@ -92,7 +103,6 @@ header small {
     color: var(--color-orange-primary);
     font-style: italic;
     transition: var(--transition);
-    cursor: pointer;
 }
 
 header small:hover {
@@ -106,7 +116,7 @@ header small::after {
     height: 10rem;
     background-color: var(--color-orange-primary);
     margin-top: 1rem;
-}
+} */
 
 /* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px){
@@ -118,6 +128,19 @@ header small::after {
     .header__container p {
         margin: 2rem 0;
         width: 80%;
+    }
+
+    .header__name {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+
+    .circle__text {
+        display: none;
+    }
+    
+    .watermark {
+        display: none;
     }
 }
 
@@ -140,5 +163,9 @@ header small::after {
         width: 90%;
         font-size: 0.8rem;
         font-weight: 300;
+    }
+    
+    .header__logo {
+        position: absolute;
     }
 }

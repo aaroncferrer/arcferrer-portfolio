@@ -4,9 +4,9 @@ Montserrat - Text Font | font-family: 'Montserrat', sans-serif;
 Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 */
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Orbitron:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Source+Serif+Pro:wght@400;600;700;900&family=Space+Mono:wght@400;700&display=swap');
 
-/* CSS RESET */
+/* ===== CSS RESET ===== */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,17 +15,19 @@ Space Mono - Secondary Font | font-family: 'Space Mono', monospace;
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
+	cursor: none;
 }
 
 :root {
-	--color-bg: #111c20;
-	--color-bg-variant: #1f343d;
+	--color-bg: #0e181b;
+	--color-bg-variant: #18272e;
 	--color-orange-primary: #fb5708;
 	--color-orange-secondary: #c88261;
 	--color-white : #fff;
 	--color-light: rgba(255, 255, 255, 0.6);
 
 	--transition: all 0.3s ease;
+	--transition-opacity: opacity 0.3s ease;
 
 	--container-width-lg: 75%;
 	--container-width-md: 80%;
@@ -92,7 +94,8 @@ a:hover {
 	transition: var(--transition);
 	font-size: 0.85rem;
 	letter-spacing: 0;
-	cursor: pointer;
+	-webkit-box-shadow: 6px 9px 15px 3px rgba(0,0,0,0.45); 
+	box-shadow: 6px 9px 15px 3px rgba(0,0,0,0.45);
 }
 
 .btn-primary {
