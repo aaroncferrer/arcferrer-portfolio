@@ -56,7 +56,20 @@
         },
         {
             "id": 5,
-            "imgSrc": "./projects/tictactoe01.png",
+            "imgSrc": "./projects/stocks01.png",
+            "imgSrc2": "./projects/stocks02.png",
+            "imgAlt": "Stocks Application",
+            "shape": "square",
+            "title": "Stocks Application",
+            "techs": ["Ruby", "Rails", "React", "Bootstrap", "RSpec", "PostgreSQL"],
+            "desc" : "Introducing the Stocks App: a professional trading platform leveraging a solid Ruby on Rails backend, adhering to Test-Driven Development (TDD) and RESTful principles. Security features are top-notch with bcrypt and JWT-based user authentication. The React frontend, coupled with Bootstrap, offers an intuitive experience. PostgreSQL manages data efficiently, and RSpec with SimpleCov guarantees comprehensive code testing for quality assurance.",
+            "github" : "https://github.com/aaroncferrer/stocks",
+            "demo" : "https://stocks-app-arcf.vercel.app/",
+            "status" : ""
+        },
+        {
+            "id": 6,
+            "imgSrc": "./projects/tictactoe01.gif",
             "imgSrc2": "./projects/tictactoe02.png",
             "imgAlt": "Tic-Tac-Toe Application",
             "shape": "square",
@@ -65,19 +78,6 @@
             "desc" : "Web-based tic-tac-toe - made with HTML, CSS, and Vanilla JavaScript.",
             "github" : "https://github.com/aaroncferrer/tic-tac-toe",
             "demo" : "https://aaroncferrer.github.io/tic-tac-toe/",
-            "status" : ""
-        },
-        {
-            "id": 6,
-            "imgSrc": "./projects/landing01.gif",
-            "imgSrc2": "./projects/landing02.png",
-            "imgAlt": "Sample Landing Page",
-            "shape": "square",
-            "title": "Sample Landing Page",
-            "techs": ["HTML", "CSS", "JavaScript", "Responsive Web Design"],
-            "desc" : "A sample product landing page using HTML, customized through CSS with responsiveness integrated using media queries.",
-            "github" : "https://github.com/aaroncferrer/sample-landing-page",
-            "demo" : "https://aaroncferrer.github.io/sample-landing-page/",
             "status" : ""
         }
     ]
