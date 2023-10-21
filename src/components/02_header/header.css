@@ -1,97 +1,99 @@
 header {
-    height: 100vh;
-    padding-top: 10rem;
-    overflow: hidden;
+  height: 100vh;
+  padding-top: 10rem;
+  overflow: hidden;
 }
 
 .header__logo {
-    position: fixed;
-    top: 3%;
-    left: 3.5%;
-    font-size: 1.3rem;
+  position: fixed;
+  top: 3%;
+  left: 3.5%;
+  font-size: 1.3rem;
 }
 
 .header__name__container {
-    position: relative;
+  position: relative;
 }
 
 .header__name {
-    font-size: 5rem;
-    font-weight: 700;
-    letter-spacing: 3.5px;
-    font-style: italic;
-    background: var(--color-bg);
-    border-radius: 30%;
-    display: inline-block;
-    text-shadow: 6px 8px 0px rgba(0, 0, 0, 1);
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  font-style: italic;
+  background: var(--color-bg);
+  border-radius: 30%;
+  display: inline-block;
+  text-shadow: 6px 8px 0px rgba(0, 0, 0, 1);
 }
 
 .header__slogan {
-    font-size: 4.4rem;
-    font-weight: 700;
+  font-size: 4.4rem;
+  font-weight: 700;
 }
 
 .header__container > h5:first-of-type {
-    margin-bottom: 0.8rem;
-    font-family: var(--font-secondary);
-    color: var(--color-orange-secondary);
-    letter-spacing: -1px;
-    font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-family: var(--font-secondary);
+  color: var(--color-orange-secondary);
+  letter-spacing: -1px;
+  font-size: 1.1rem;
 }
 
-.header__container p, .header__slogan {
-    color: var(--color-light);
+.header__container p,
+.header__slogan {
+  color: var(--color-light);
 }
 
 .header__slogan span {
-    color: var(--color-orange-secondary);
+  color: var(--color-orange-secondary);
 }
 
 .header__container p {
-    margin: 1rem 0 2rem;
-    width: 65%;
-    font-size: 1.1rem;
-    font-weight: 300;
+  margin: 1rem 0 2rem;
+  width: 65%;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .header__buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 /* ====== HEADER SOCIALS ====== */
 .header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    position: fixed;
-    left: 5%;
-    bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+  z-index: 999;
 }
 
 .header__socials a {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .header__socials::after {
-    content: '';
-    width: 1px;
-    height: 10em;
-    background-color: var(--color-orange-primary);
+  content: "";
+  width: 1px;
+  height: 10em;
+  background-color: var(--color-orange-primary);
 }
 
 .watermark {
-    writing-mode: vertical-lr;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 700;
-    position: fixed;
-    right: -5%;
-    transform: rotate(180deg);
-    bottom: -10%;
-    font-size: 13.5rem;
-    color: #142226bc;
-    z-index: -1;
+  writing-mode: vertical-lr;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  position: fixed;
+  right: -5%;
+  transform: rotate(180deg);
+  bottom: -10%;
+  font-size: 13.5rem;
+  color: #142226bc;
+  z-index: -1;
 }
 
 /* ===== HEADER EMAIL ===== */
@@ -119,53 +121,54 @@ header small::after {
 } */
 
 /* MEDIA QUERIES FOR TABLETS (MEDIUM DEVICES) */
-@media screen and (max-width: 1024px){
-    header {
-        padding-top: 16rem;
-        height: 100vh;
-    }
+@media screen and (max-width: 1024px) {
+  header {
+    padding-top: 16rem;
+    height: 100vh;
+  }
 
-    .header__container p {
-        margin: 2rem 0;
-        width: 80%;
-    }
+  .header__container p {
+    margin: 2rem 0;
+    width: 80%;
+  }
 
-    .header__name {
-        font-size: 4rem;
-        letter-spacing: 3px;
-    }
+  .header__name {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
 
-    .circle__text {
-        display: none;
-    }
-    
-    .watermark {
-        display: none;
-    }
+  .circle__text {
+    display: none;
+  }
+
+  .watermark {
+    display: none;
+  }
 }
 
 /* MEDIA QUERIES FOR MOBILE PHONES (SMALL DEVICES) */
-@media screen and (max-width: 600px){
-    header {
-        padding-top: 12rem;
-    }
+@media screen and (max-width: 600px) {
+  header {
+    padding-top: 12rem;
+  }
 
-    .header__socials, header small {
-        display: none;
-    }
+  .header__socials,
+  header small {
+    display: none;
+  }
 
-    .header__container h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
+  .header__container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
 
-    .header__container p {
-        width: 90%;
-        font-size: 0.8rem;
-        font-weight: 300;
-    }
-    
-    .header__logo {
-        position: absolute;
-    }
+  .header__container p {
+    width: 90%;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  .header__logo {
+    position: absolute;
+  }
 }
