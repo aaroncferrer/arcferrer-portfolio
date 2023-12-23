@@ -46,27 +46,22 @@ function About({ aboutRef }) {
 
             <article className="about__education">
               <div className="about__education__header">
-                <h2>EDUCATION | EXPERIENCE</h2>
+                <h2>EXPERIENCE</h2>
               </div>
 
               <div className="about__educations">
-                <small>Oct 2022 - Oct 2023</small>
-                <small>Avion School</small>
+                <small>Nov 2023 - Present</small>
+                <small>Likha-iT - Software Engineer</small>
               </div>
 
               <div className="about__educations">
                 <small>May 2023 - June 2023</small>
-                <small>Focus HQ</small>
+                <small>Focus HQ - Software Engineer Intern</small>
               </div>
 
               <div className="about__educations">
-                <small>May 2022 - June 2022</small>
-                <small>Zuitt Coding Bootcamp</small>
-              </div>
-
-              <div className="about__educations">
-                <small>Aug 2015 - Feb 2021</small>
-                <small>University of the Philippines Los Baños</small>
+                <small>Apr 2021 - Feb 2023</small>
+                <small>Sanctum Co. - Account Manager</small>
               </div>
             </article>
 
