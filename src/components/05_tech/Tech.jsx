@@ -17,16 +17,24 @@ function Tech({ techRef }) {
             <i class="devicon-css3-plain colored tech"></i>
           </div>
           <div className="tech_item">
-            <p>JavaScript</p>
-            <i class="devicon-javascript-plain colored tech"></i>
-          </div>
-          <div className="tech_item">
             <p>Bootstrap</p>
             <i class="devicon-bootstrap-plain colored tech"></i>
           </div>
           <div className="tech_item">
+            <p>JavaScript</p>
+            <i class="devicon-javascript-plain colored tech"></i>
+          </div>
+          <div className="tech_item">
+            <p>TypeScript</p>
+            <i class="devicon-typescript-plain colored tech"></i>
+          </div>
+          <div className="tech_item">
             <p>ReactJS</p>
             <i class="devicon-react-original colored tech"></i>
+          </div>
+          <div className="tech_item">
+            <p>Redux</p>
+            <i class="devicon-redux-original colored tech"></i>
           </div>
           <div className="tech_item">
             <p>Ruby</p>
@@ -38,19 +46,19 @@ function Tech({ techRef }) {
           </div>
           <div className="tech_item">
             <p>RSpec</p>
-            <i class="devicon-rspec-original colored tech"></i>
+            <i class="devicon-rspec-plain colored tech"></i>
           </div>
           <div className="tech_item">
-            <p>PostgreSQL</p>
-            <i class="devicon-postgresql-plain colored tech"></i>
+            <p>Github</p>
+            <i class="devicon-github-original colored tech"></i>
           </div>
           <div className="tech_item">
             <p>Git</p>
             <i class="devicon-git-plain colored tech"></i>
           </div>
           <div className="tech_item">
-            <p>Github</p>
-            <i class="devicon-github-original colored tech"></i>
+            <p>MySQL</p>
+            <i class="devicon-mysql-original colored tech"></i>
           </div>
           <div className="tech_item">
             <p>VS Code</p>
@@ -61,12 +69,8 @@ function Tech({ techRef }) {
             <i class="devicon-jira-plain colored tech"></i>
           </div>
           <div className="tech_item">
-            <p>Bitbucket</p>
-            <i class="devicon-bitbucket-original colored tech"></i>
-          </div>
-          <div className="tech_item">
-            <p>TypeScript</p>
-            <i class="devicon-typescript-plain colored tech"></i>
+            <p>ArgoCD</p>
+            <i class="devicon-argocd-plain colored tech"></i>
           </div>
         </div>
       </div>
