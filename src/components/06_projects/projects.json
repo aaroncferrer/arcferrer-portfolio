@@ -52,7 +52,7 @@
       "desc": "A web app connecting patients and dietitians. Patients can create accounts, book appointments, and receive nutrition guidance. Dietitians manage schedules, conduct video consultations, and access patient records.",
       "github": "https://github.com/aaroncferrer/nutri-app",
       "demo": "https://nutri-app-ecru.vercel.app/",
-      "status": ""
+      "status": "Deprecated Database"
     },
     {
       "id": 5,
@@ -65,7 +65,7 @@
       "desc": "Introducing the Stocks App: a professional trading platform leveraging a solid Ruby on Rails backend, adhering to Test-Driven Development (TDD) and RESTful principles. Security features are top-notch with bcrypt and JWT-based user authentication. The React frontend, coupled with Bootstrap, offers an intuitive experience. PostgreSQL manages data efficiently, and RSpec with SimpleCov guarantees comprehensive code testing for quality assurance.",
       "github": "https://github.com/aaroncferrer/stocks",
       "demo": "https://stocks-app-arcf.vercel.app/",
-      "status": ""
+      "status": "Deprecated Database"
     },
     {
       "id": 6,

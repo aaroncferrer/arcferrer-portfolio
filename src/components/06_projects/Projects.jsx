@@ -88,7 +88,14 @@ function Projects({ projectsRef }) {
             size="lg"
           >
             <Modal.Header>
-              <Modal.Title>{selectedProject.title}</Modal.Title>
+              <Modal.Title>
+                {`${selectedProject.title} `}
+                {selectedProject.status && (
+                  <span style={{ fontStyle: "italic", fontSize: "0.85rem" }}>
+                    ({selectedProject.status})
+                  </span>
+                )}
+              </Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <img
